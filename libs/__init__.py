@@ -1,0 +1,1 @@
+all = [ "aws", "azure", "gcp" , "twitter", "analyzer" ]
