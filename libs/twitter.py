@@ -9,7 +9,7 @@ analyzer = imp.load_source('analyzer', 'libs/analyzer.py')
 class MyStreamListener(tweepy.StreamListener,analyzer.analyzer):
     
     def on_status(self, status):
-        self.analyze(status.text)
+        self.analyze_sentiment(status.text)
         
 
 class twitter:

@@ -11,7 +11,7 @@ class analyzer:
 
     def aws(self):
         pass
-    def analyze(self,text):
+    def analyze_sentiment(self,text):
         self.local(text)
     def local(self,text):
         blob = TextBlob(text)
