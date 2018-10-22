@@ -1,0 +1,5 @@
+requests
+configparser
+google-cloud-language
+tweepy
+textblob
