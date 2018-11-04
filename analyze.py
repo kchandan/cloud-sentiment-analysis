@@ -1,13 +1,16 @@
-import libs.aws
-import libs.azure
-import libs.gcp
+# import libs.aws
+# import libs.azure
+# import libs.gcp
+import libs.analyzer
 import libs.twitter
 from textblob import TextBlob
 
         
 def analyze():
     tweets = libs.twitter.twitter()
-    tweets.tweet_stream(["coffee"])
+    search_results = tweets.tweet_batch("weed",10)
+    a = libs.analyzer.analyzer()
+    a.analyze_df(search_results)
     
 
 def main():
