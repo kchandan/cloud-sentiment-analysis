@@ -7,11 +7,7 @@ import imp
 import  twitter
 from twitter import Twitter
 from twitter import OAuth
-import numpy as np
-import pandas as pd
-from pandas.io.json import json_normalize
-# import matplotlib.pyplot as plt
-from textblob import TextBlob
+
 
 analyzer = imp.load_source('analyzer', 'libs/analyzer.py')
 
@@ -42,29 +38,3 @@ class twitter:
 
     def tweet_batch(self,topics,count):
         return self.api.search.tweets(q=topics, count=count)
-
-        
-        # mid=0;
-        # df=pd.DataFrame()    
-        # dftemp= json_normalize(search_result,'statuses')
-        # df=df.append(dftemp,ignore_index=True)
-    
-        # tweettext=df['text']
-        # df.to_csv("tweets.csv")
-        
-        # wordlist=pd.DataFrame();
-
-        # polarity=[]
-        # subj=[]
-
-        # for t in tweettext:
-        #     tx= TextBlob(t)
-        #     polarity.append(tx.sentiment.polarity)
-        #     subj.append(tx.sentiment.subjectivity)
-
-        # print (tweettext)
-        # poltweet= pd.DataFrame({'polarity':polarity,'subjectivity':subj})
-        # poltweet.polarity.plot(title='Polarity')
-        # plt.show()
-    
-
