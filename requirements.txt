@@ -1,5 +1,7 @@
 requests
 configparser
 google-cloud-language
+google-cloud-translate
 tweepy
 textblob
+boto3
