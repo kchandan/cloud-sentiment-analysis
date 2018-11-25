@@ -5,3 +5,7 @@ google-cloud-translate
 tweepy
 textblob
 boto3
+numpy
+pandas
+matplotlib
+twitter
