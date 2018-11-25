@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import tweepy
+# import tweepy
 import os
 from os.path import expanduser
 import configparser
@@ -9,12 +9,10 @@ from twitter import Twitter
 from twitter import OAuth
 
 
-analyzer = imp.load_source('analyzer', 'libs/analyzer.py')
-
-class MyStreamListener(tweepy.StreamListener,analyzer.analyzer):
+# class MyStreamListener(tweepy.StreamListener,analyzer.analyzer):
     
-    def on_status(self, status):
-        self.analyze_sentiment(status.text)
+#     def on_status(self, status):
+#         self.analyze_sentiment(status.text)
         
 
 class twitter:
