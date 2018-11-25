@@ -1,1 +1,1 @@
-all = [ "aws", "azure", "gcp" , "twitter", "analyzer" ]
+all = [ "aws", "azure", "gcp" , "twitter", "local" ]
