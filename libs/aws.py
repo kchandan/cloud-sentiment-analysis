@@ -29,9 +29,7 @@ class aws_comp:
         response = self.comprehend.batch_detect_sentiment(TextList = df['tweets'].values.tolist(),LanguageCode = 'en')
         aws_score = []
         for result in response['ResultList']:
-            print(result['Index'],result['Sentiment'])
             aws_score.append(result['Sentiment'])
-
         df['aws_sentiment'] = aws_score
 
         
