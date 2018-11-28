@@ -1,3 +1,3 @@
-# cloud-sentiment-analysis
+# AI API As Service
 
 Copyright: Chandan Kumar, beCloudReady Inc
