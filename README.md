@@ -1,5 +1,9 @@
 # AI API As Service
 
+This is umbrella project to create API wrappers around most Public cloud services to make usage of these services Cloud Agnostic.
+
+Please feel free to report bug or contribute.
+
 ## Cloud based Sentiment Analysis
 
 This provides easy to use API wrappers around popular public cloud services.
@@ -81,3 +85,5 @@ python tweet-stream-analyze.py
 ```
 
 Copyright: Chandan Kumar, beCloudReady Inc
+
+Reach me: chandank@becloudready.com
